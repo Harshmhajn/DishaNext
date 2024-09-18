@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+  }
+  
+  .headerc {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    max-width: 110px;
+    height: auto;
+  }
+  
+  .navmenu {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navmenu a {
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: color 0.42s ease;
+    text-decoration: none;
+  }
+  
+  .navmenu a:hover {
+    color: rgb(30, 30, 180);
+  }
+  
+  .nav-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-icon img {
+    margin-right: 20px;
+    color: white;
+    height: 25px;
+    width: 25px;
+  }
+  
+  #menu-icon {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navmenu {
+      flex-direction: column;
+      position: absolute;
+      top: 100px; /* Adjust this based on your header height */
+      right: 0;
+      background-color: black;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease;
+    }
+  
+    .navmenu.active {
+      height: 300px; /* Adjust height for menu items */
+    }
+  
+    .navmenu a {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .nav-icon {
+      margin-left: auto;
+    }
+  
+    #menu-icon {
+      display: block;
+    }
+  }
+  

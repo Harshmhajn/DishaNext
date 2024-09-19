@@ -1,0 +1,36 @@
+body {
+    color: white; 
+}
+
+.head-line {
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.head-text {
+    margin-right: 1rem;
+}
+
+.head-text h1 {
+    font-size: 2.1em;
+}
+
+.head-text h3 {
+    
+    margin-top: 1rem;
+}
+
+.head-text h3 {
+    
+    margin-top: 1rem;
+}
+
+.head-text h4 {
+    
+    margin-top: 1rem;
+}
+
+
+
+
+

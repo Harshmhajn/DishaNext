@@ -1,0 +1,13 @@
+
+.head-line-image {
+    width: 100%; /* Ensures the container takes full width */
+    max-width: 100%; /* Prevents the image from exceeding the container width */
+    margin: 0 auto; /* Centers the image container */
+}
+
+.head-line-image img {
+    width: 100%; /* Makes the image scale with the container */
+    height: auto; /* Maintains the aspect ratio */
+    max-height: 50rem; /* Limits the height of the image */
+    object-fit: cover; /* Ensures the image covers the container area */
+}
